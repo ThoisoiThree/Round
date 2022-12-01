@@ -1,0 +1,30 @@
+from typing import Optional
+import c4d 
+import math
+
+def main():
+
+    #initializing vars
+    position = op[c4d.ID_BASEOBJECT_REL_POSITION]
+    rotation = op[c4d.ID_BASEOBJECT_REL_ROTATION]
+
+    positionRound = 0 #how many signs are after comma
+    rotationRound = 0 #how many signs are after comma
+
+    #modifying
+    for i in range(3):
+
+        position[i] = round(position[i], positionRound)
+
+        rotation[i] = math.degrees(rotation[i])
+        rotation[i] = round(rotation[i], rotationRound)
+        rotation[i] = math.radians( rotation[i])
+
+    #transferring
+    op.SetAbsPos(position)
+    op.SetAbsRot(rotation)
+    
+    c4d.EventAdd()
+
+if __name__ == '__main__':
+    main() 
