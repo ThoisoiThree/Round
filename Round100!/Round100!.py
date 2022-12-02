@@ -4,6 +4,10 @@ import math
 
 def main():
 
+    if not op:
+        c4d.gui.MessageDialog("Select an object!")
+        return
+
     #initializing vars
     position = op[c4d.ID_BASEOBJECT_REL_POSITION]
     rotation = op[c4d.ID_BASEOBJECT_REL_ROTATION]
