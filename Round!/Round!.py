@@ -3,6 +3,9 @@ import c4d
 import math
 
 def main():
+    
+    #Code by Thoisoi Three https://vk.com/lighting.techdirector
+    #Logo by Alexey Golod https://vk.com/golodvk
 
     if not op:
         c4d.gui.MessageDialog("Select an object!")
