@@ -4,4 +4,3 @@
 + Cinema 4D R20+ is required  
 
 ![Demo](res/round_pic.jpg)
-+ Cinema 4D R20+ is required
